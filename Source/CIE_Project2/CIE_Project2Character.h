@@ -18,6 +18,12 @@ class ACIE_Project2Character : public ACharacter
 	/** Follow camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FollowCamera;
+    
+public:
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+    float Health = 0.0f;
+    UFUNCTION(BlueprintCallable)
+    void SetHealth(float newHealth) {Health = newHealth;}
 public:
 	ACIE_Project2Character();
 
