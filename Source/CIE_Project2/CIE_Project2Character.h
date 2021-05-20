@@ -20,17 +20,6 @@ class ACIE_Project2Character : public ACharacter
 	class UCameraComponent* FollowCamera;
 
 public:
-	/** Variable for the health of the character*/
-	UPROPERTY(VisibleAnywhere, BlueprintReadONly, Category="CIE_Project2Character")
-	float Health = 0.0f;
-
-	UFUNCTION(BlueprintPure)
-	float GetHealth() const { return Health; }
-
-	UFUNCTION(BlueprintCallable)
-	void SetHealth(float NewHealth) { Health = NewHealth; }
-
-public:
 	ACIE_Project2Character();
 
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
